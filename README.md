@@ -77,28 +77,6 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 
 ## Author
 
-Ce repository contient un cheat sheet pour Git et GitFlow, rédigé et maintenu par les auteurs suivants :
-
-## Liste des auteurs
-
-- **Messaoud Houri** - [Profil GitHub](https://github.com/MessaKami)
-- **Ayoub Laroussi** - [Profil GitHub](https://github.com/EyeOne2-0)
-- **Enguerran Smagghe** - [Profil GitHub](https://github.com/EnguerranSGG)
-- **Justin Didelot** - [Profil GitHub](https://github.com/Srekaens)
-
-## Contributions
-
-Chaque auteur a contribué à la rédaction, à la révision et à la mise à jour du contenu du cheat sheet, incluant :
-
-- **Git** : les bases, la gestion des branches, la configuration, les commandes avancées.
-- **GitFlow** : stratégies de branchement, workflow de développement.
-
-## Remerciements
-
-Merci à tous les contributeurs qui ont participé à l'amélioration de ce repository. Si vous souhaitez contribuer, n'hésitez pas à soumettre une Pull Request.
-
-
-
 ## License
 
 Distributed under the MIT License. `LICENSE` See for more information.
