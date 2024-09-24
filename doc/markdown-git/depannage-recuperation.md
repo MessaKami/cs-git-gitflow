@@ -216,3 +216,167 @@ git checkout HEAD~1 -- [chemin/du/fichier]
 - Cela récupère le fichier depuis le commit précédent.
 
 ---
+
+**8.3. Gérer les conflits complexes**
+
+Lors de la fusion de branches ou du rebasage, des conflits peuvent survenir lorsque des modifications concurrentes sont apportées aux mêmes lignes de code. Gérer ces conflits de manière efficace est essentiel pour maintenir la stabilité du code.
+
+---
+
+**Étapes pour résoudre les conflits :**
+
+1. **Identifier les fichiers en conflit**
+
+   - Après une tentative de fusion ou de rebasage, Git vous avertira des conflits.
+   - **Commande** :
+
+     ```bash
+     git status
+     ```
+
+     - Les fichiers en conflit seront marqués comme "unmerged".
+
+2. **Analyser les conflits**
+
+   - Ouvrez chaque fichier en conflit dans votre éditeur.
+   - Les conflits sont marqués avec :
+
+     ```text
+     <<<<<<< HEAD
+     Votre version du code
+     =======
+     Version du code de la branche fusionnée
+     >>>>>>> [nom_de_la_branche]
+     ```
+
+3. **Résoudre les conflits manuellement**
+
+   - Décidez quelle version du code conserver.
+   - Vous pouvez choisir l'une des deux versions, ou combiner les deux.
+   - Supprimez les marqueurs `<<<<<<<`, `=======`, `>>>>>>>`.
+
+   - **Exemple** :
+
+     Avant résolution :
+
+     ```javascript
+     function greet() {
+       <<<<<<< HEAD
+       console.log("Bonjour le monde");
+       =======
+       console.log("Hello world");
+       >>>>>>> feature_branch
+     }
+     ```
+
+     Après résolution :
+
+     ```javascript
+     function greet() {
+       console.log("Bonjour le monde");
+       console.log("Hello world");
+     }
+     ```
+
+4. **Utiliser des outils de fusion**
+
+   - Les outils graphiques peuvent faciliter la résolution des conflits, surtout pour les fichiers volumineux.
+
+   - **Commande** :
+
+     ```bash
+     git mergetool
+     ```
+
+     - Configurez un outil de fusion dans votre configuration Git (par exemple, Meld, KDiff3).
+
+   - **Configuration d'un outil de fusion** :
+
+     - **Exemple avec Meld** :
+
+       ```bash
+       git config --global merge.tool meld
+       ```
+
+       - Puis lancez `git mergetool`.
+
+5. **Valider la résolution des conflits**
+
+   - Après avoir résolu les conflits dans un fichier, ajoutez-le à l'index :
+
+     ```bash
+     git add [chemin/du/fichier]
+     ```
+
+   - Vérifiez que tous les conflits sont résolus :
+
+     ```bash
+     git status
+     ```
+
+     - Il ne devrait plus y avoir de fichiers en conflit.
+
+6. **Finaliser l'opération**
+
+   - **Pour une fusion** :
+
+     - Commettez les changements :
+
+       ```bash
+       git commit
+       ```
+
+       - Git utilisera par défaut le message de fusion.
+
+   - **Pour un rebasage** :
+
+     - Continuez le rebasage :
+
+       ```bash
+       git rebase --continue
+       ```
+
+     - Si vous souhaitez abandonner le rebasage :
+
+       ```bash
+       git rebase --abort
+       ```
+
+---
+
+**Scénario d'exemple : Conflit lors d'une fusion**
+
+Supposons que vous travaillez sur la branche `main` et que vous souhaitez fusionner la branche `feature` :
+
+```bash
+git checkout main
+git merge feature
+```
+
+Git indique un conflit dans `src/app.js`.
+
+1. **Vérifiez l'état** :
+
+   ```bash
+   git status
+   ```
+
+   - Le fichier `src/app.js` est en conflit.
+
+2. **Ouvrez le fichier et résolvez le conflit**
+
+3. **Ajoutez le fichier résolu** :
+
+   ```bash
+   git add src/app.js
+   ```
+
+4. **Terminez la fusion** :
+
+   ```bash
+   git commit
+   ```
+
+   - La fusion est maintenant complète.
+
+---
