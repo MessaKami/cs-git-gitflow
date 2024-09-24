@@ -119,3 +119,19 @@ Une fois vos modifications localement prêtes et validées avec un commit, vous 
   Si vous avez besoin de réécrire l’historique des commits (après un rebase par exemple), utilisez l’option `--force`, mais faites-le avec précaution :
   ```bash
   git push --force
+
+  ---
+
+
+### 4.6. Récupérer les modifications d'un dépôt distant (`git pull`)
+Pour garder votre dépôt local synchronisé avec les modifications faites par les autres membres de l'équipe, vous devez régulièrement récupérer et fusionner les mises à jour du dépôt distant.
+
+- **Récupérer et fusionner en une seule commande** :
+  ```bash
+  git pull
+  ```
+  Cette commande effectue un `git fetch` (pour récupérer les nouvelles données) suivi d'un `git merge` (pour fusionner ces nouvelles données dans votre branche locale).
+
+- **Pull en fast-forward** : Si votre branche locale est derrière la branche distante, Git fera un fast-forward pour mettre à jour votre branche locale.
+
+- **Pull avec conflits** : Si des modifications locales et distantes entrent en conflit, vous devrez résoudre les conflits manuellement avant de terminer le `git pull`.
