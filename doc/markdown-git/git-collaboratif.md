@@ -32,18 +32,37 @@ Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités
   ```bash
   git switch -c <nom_branche>
   ```
-### 4.3. Fusionner des branches (`git merge`)
-Une fois que vous avez terminé de travailler sur une fonctionnalité dans une branche, vous voudrez probablement fusionner cette branche dans une autre (souvent la branche principale). La fusion permet d’intégrer les modifications de la branche source dans la branche cible.
+## 4.3. Fusionner des branches (`git merge`, `git rebase`)
+Lorsque vous travaillez avec des branches, il existe deux manières principales d'intégrer les modifications d'une branche dans une autre : **merge** et **rebase**. Alors que `git merge` conserve l'historique de la branche séparée, `git rebase` réécrit l'historique pour donner l'apparence que toutes les modifications ont été faites en ligne droite, ce qui peut rendre l'historique plus propre.
 
-- **Fusionner une branche** :
-  Assurez-vous d’être sur la branche où vous voulez fusionner (par exemple, la branche `main`), puis exécutez :
+- **Fusionner une branche avec `git rebase`** :
   ```bash
-  git merge <nom_branche>
+  git rebase <branche_source>
   ```
-  Cela fusionnera les modifications de `<nom_branche>` dans la branche actuelle.
+  Cela déplace vos commits locaux au sommet des derniers commits de la branche source, évitant ainsi la création d'un commit de merge.
 
-- **Fusion en fast-forward** :
-  Si la branche que vous fusionnez n'a pas de commits intermédiaires qui diffèrent de la branche actuelle, Git peut effectuer une fusion "fast-forward", ce qui signifie qu'il avance simplement la tête de la branche actuelle vers le dernier commit de la branche fusionnée.
+- **Cas d'usage typique du rebase** : 
+  Le rebase est utile pour maintenir une branche à jour avec la branche principale (`main`) sans polluer l’historique avec des commits de fusion. Par exemple, avant de fusionner votre branche de travail dans `main`, vous pouvez d'abord réappliquer vos commits au sommet de `main` en faisant :
+  ```bash
+  git checkout feature-branch
+  git rebase main
+  ```
 
-- **Fusion avec commit de merge** :
-  Si la branche a des commits différents, Git créera un commit de fusion pour enregistrer l'historique de la fusion.
+- **Résolution des conflits pendant un rebase** : Comme avec `git merge`, des conflits peuvent survenir pendant un rebase. Si cela arrive :
+  1. Résolvez les conflits manuellement dans les fichiers concernés.
+  2. Une fois les conflits résolus, marquez-les comme résolus avec :
+     ```bash
+     git add <fichiers_conflits>
+     ```
+  3. Continuez le rebase avec :
+     ```bash
+     git rebase --continue
+     ```
+  4. Si vous voulez annuler un rebase en cours :
+     ```bash
+     git rebase --abort
+     ```
+
+- **Rebase vs Merge** : 
+  - `git merge` préserve l'historique des branches parallèles et crée un commit de merge, ce qui est utile pour visualiser toutes les branches et leur relation.
+  - `git rebase` réécrit l'historique en appliquant vos commits au sommet des nouveaux commits, créant un historique linéaire. Cela rend l'historique plus simple, mais vous perdez la trace des branches parallèles.
