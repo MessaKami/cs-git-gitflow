@@ -20,3 +20,12 @@ La plupart des IDE modernes intègrent Git directement, ce qui facilite la gesti
 - **Eclipse** : Utilise le plugin EGit pour intégrer Git à l'IDE.
   
 Utiliser Git dans un IDE vous permet de voir les changements en temps réel, de gérer visuellement les branches et de résoudre les conflits de manière plus intuitive.
+
+### 9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)
+Visualiser l'historique des commits aide à mieux comprendre l'évolution du projet. Voici quelques outils et commandes utiles :
+
+- **`git log --graph --oneline`** : Affiche un graphe simple de l'historique Git avec une représentation des branches et des commits dans un format compact.
+- **`gitk`** : Outil graphique intégré à Git, qui affiche un arbre visuel détaillé des branches et des commits.
+- **`gitg`** : Interface graphique similaire à `gitk`, avec une présentation propre et plus moderne.
+  
+Ces outils permettent de suivre les branches, de visualiser les fusions et d’analyser les commits.
