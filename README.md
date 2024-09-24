@@ -3,9 +3,9 @@
 Brève description
 
 ### 1. Introduction à Git
-   - [1.1. Qu'est-ce que Git ?](#/README.md)
-   - [1.3. Pourquoi utiliser Git ?](#/README.md)
-   - [1.4. Différence entre Git et GitHub (ou autres plateformes de gestion de code)](#/README.md)
+   - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/git-presentation.md)
+   - [1.3. Pourquoi utiliser Git ?](./doc/markdown-git/git-presentation.md)
+   - [1.4. Différence entre Git et GitHub (ou autres plateformes de gestion de code)](./doc/markdown-git/git-presentation.md)
 
 ## 2. Installation et configuration de Git
    - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/installation-config.md)
@@ -65,7 +65,6 @@ Brève description
 
 Ce dépôt est une structure permettant de démarrer un projet professionnel ou personnel. Ceci vous fera gagner un temps précieux et maximiser votre temps de travail.
 
-
 ## About The Project
 
 ### Built With
@@ -73,7 +72,6 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 - ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 - ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
 
 ## Author
 
