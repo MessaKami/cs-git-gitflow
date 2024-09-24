@@ -1,7 +1,9 @@
 ## 4. Travail collaboratif avec Git
-
+---
 ### 4.1. Introduction aux branches
 Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités ou correctifs en parallèle. Chaque branche est un environnement indépendant où les développeurs peuvent effectuer des modifications sans perturber le travail des autres. La branche principale est souvent appelée `main` ou `master`, mais des branches spécifiques peuvent être créées pour développer de nouvelles fonctionnalités, corriger des bugs ou expérimenter.
+
+---
 
 ### 4.2. Créer et basculer entre les branches (`git branch`, `git checkout`, `git switch`)
 - **Créer une nouvelle branche** : 
@@ -32,6 +34,9 @@ Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités
   ```bash
   git switch -c <nom_branche>
   ```
+
+---
+
 ## 4.3. Fusionner des branches (`git merge` et `git rebase`)
 Lorsque vous travaillez avec des branches, il existe deux manières principales d'intégrer les modifications d'une branche dans une autre : **merge** et **rebase**. Alors que `git merge` conserve l'historique de la branche séparée, `git rebase` réécrit l'historique pour donner l'apparence que toutes les modifications ont été faites en ligne droite, ce qui peut rendre l'historique plus propre.
 
@@ -66,3 +71,51 @@ Lorsque vous travaillez avec des branches, il existe deux manières principales 
 - **Rebase vs Merge** : 
   - `git merge` préserve l'historique des branches parallèles et crée un commit de merge, ce qui est utile pour visualiser toutes les branches et leur relation.
   - `git rebase` réécrit l'historique en appliquant vos commits au sommet des nouveaux commits, créant un historique linéaire. Cela rend l'historique plus simple, mais vous perdez la trace des branches parallèles.
+
+---
+
+### 4.4. Gérer les conflits de merge
+Un conflit de merge survient lorsque Git ne peut pas fusionner automatiquement deux branches en raison de modifications contradictoires dans les mêmes fichiers. Pour résoudre ces conflits :
+
+- Git marquera les fichiers en conflit et vous demandera de les modifier manuellement. Les sections conflictuelles dans les fichiers seront marquées comme ceci :
+  ```plaintext
+  <<<<<<< HEAD
+  // Votre version
+  =======
+  // La version fusionnée
+  >>>>>>> branch-xyz
+  ```
+
+- Modifiez les fichiers pour choisir les changements à conserver, puis marquez-les comme résolus :
+  ```bash
+  git add <fichiers_conflits>
+  ```
+
+- Ensuite, terminez la fusion en créant un commit :
+  ```bash
+  git commit
+  ```
+  (Si vous aviez déjà fusionné tout sauf les conflits, ce commit finalisera la fusion après résolution.)
+
+- **Astuce** : Utilisez des outils de merge graphique comme **`git mergetool`** pour faciliter la résolution des conflits.
+
+---
+
+### 4.5. Envoyer des modifications vers un dépôt distant (`git push`)
+Une fois vos modifications localement prêtes et validées avec un commit, vous pouvez les partager avec les autres membres de l'équipe en les envoyant sur un dépôt distant.
+
+- **Envoyer une branche spécifique** :
+  ```bash
+  git push origin <nom_branche>
+  ```
+  Cela envoie les commits de la branche `<nom_branche>` vers le dépôt distant associé à l'alias `origin` (par défaut, le dépôt distant que vous avez cloné).
+
+- **Envoyer toutes les branches locales** :
+  ```bash
+  git push --all origin
+  ```
+
+- **Forcer un push (avec précaution)** :
+  Si vous avez besoin de réécrire l’historique des commits (après un rebase par exemple), utilisez l’option `--force`, mais faites-le avec précaution :
+  ```bash
+  git push --force
