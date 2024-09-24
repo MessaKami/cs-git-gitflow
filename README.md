@@ -43,7 +43,6 @@ Brève description
 
 ## 7. Bonnes pratiques Git
    - [7.1. Rédiger des messages de commit clairs](#/README.md)
-   - [7.2. Organisation et stratégie de branches (GitFlow, GitHub Flow, etc.)](#/README.md)
    - [7.3. Git et intégration continue (CI)](#/README.md)
    - [7.4. Gestion des conflits](#/README.md)
    - [7.5. Ne jamais committer des fichiers sensibles (utiliser `.gitignore`)](#/README.md)
