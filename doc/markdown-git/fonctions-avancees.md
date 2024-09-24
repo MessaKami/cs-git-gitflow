@@ -44,3 +44,31 @@ Si tu fais un git rebase, cela prendra les modifications de C et viendra greffer
 A – B – C - D
 
 A l’instar de git rebase, le git merge va venir créer un nouveau commit de fusion sans réécrire l’historique. Cela permet d’avoir un historique plus complet mais si l’on travaille avec plusieurs branches, cela peut vite rendre l’historique trop complexe dans la mesure où il va conserver séparément l’historique des deux branches.
+
+### 5.3. Le git tag
+
+Pour faire simple, le git tag va permettre d'annoter un point précis de l'historique de commit. Il est souvent utilisé pour marquer une version du projet sur lequel on travaille. Attention les tags ne sont pas modifiables une fois créés et ne sont pas automatiquement partagés avec un dépôt distant à moins de les pousser explicitement avec un :
+
+`git push origin <nom_du_tag>`
+
+ou pour tous les tags :
+
+`git push --tags`
+
+Les tags sont de deux types :
+
+- Légers: Il s'agit simplement d'un pointeur vers un commit en particulier, à l'instar du tag annoté, il n'a aucune métadonnée associée. Pour tager le dernier commit sur la branche actuelle :
+
+`git tag <nom_du_tag>`
+
+- Annotés: En effet, ce tag est plus complet dans la mesure où il va contenir des informations tels que l'auteur, la date, un message et éventuellement une signature GPG. Pour spécifier que l'on veut ajouter des données, on utilise -a :
+
+`git tag -a <nom_du_tag> -m "Message du tag"`
+
+Pour vérifier la liste des tags associés à un dépôt :
+
+`git tag`
+
+Et si l'on veut voir les messages des tags annotés :
+
+`git tag -n`
