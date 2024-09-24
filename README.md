@@ -37,9 +37,9 @@ Brève description
    - [5.3. Tags (`git tag`)](./doc/markdown-git/5-fonctions-avancees.md)
 
 ## 6. Gestion des dépôts distants
-   - [6.1. Ajouter un dépôt distant (`git remote add`)](#/README.md)
-   - [6.2. Gérer plusieurs dépôts distants](#/README.md)
-   - [6.3. Supprimer un dépôt distant (`git remote remove`)](#/README.md)
+   - [6.1. Ajouter un dépôt distant (`git remote add`)](./doc/markdown-git/6-remote.md)
+   - [6.2. Gérer plusieurs dépôts distants](./doc/markdown-git/6-remote.md)
+   - [6.3. Supprimer un dépôt distant (`git remote remove`)](./doc/markdown-git/6-remote.md)
 
 ## 7. Bonnes pratiques Git
    - [7.1. Rédiger des messages de commit clairs](#/README.md)
