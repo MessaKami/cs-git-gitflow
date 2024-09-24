@@ -14,13 +14,13 @@ Brève description
    - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-config.md)
 
 ## 3. Les bases de Git
-   - [3.1. Initialiser un dépôt Git (`git init`)](#/README.md)
-   - [3.2. Cloner un dépôt (`git clone`)](#/README.md)
-   - [3.3. Suivi des fichiers (`git add`)](#/README.md)
-   - [3.4. Committer des changements (`git commit`)](#/README.md)
-   - [3.5. Vérifier l'état du dépôt (`git status`)](#/README.md)
-   - [3.6. Voir l'historique des commits (`git log`)](#/README.md)
-   - [3.7. Annuler des modifications (`git checkout`, `git reset`)](#/README.md)
+   - [3.1. Initialiser un dépôt Git (`git init`)](./doc/markdown-git/3-base.md)
+   - [3.2. Cloner un dépôt (`git clone`)](./doc/markdown-git/3-base.md)
+   - [3.3. Suivi des fichiers (`git add`)](./doc/markdown-git/3-base.md)
+   - [3.4. Committer des changements (`git commit`)](./doc/markdown-git/3-base.md)
+   - [3.5. Vérifier l'état du dépôt (`git status`)](./doc/markdown-git/3-base.md)
+   - [3.6. Voir l'historique des commits (`git log`)](./doc/markdown-git/3-base.md)
+   - [3.7. Annuler des modifications (`git checkout`, `git reset`)](./doc/markdown-git/3-base.md)
 
 ## 4. Travail collaboratif avec Git
    - [4.1. Introduction aux branches](./doc/markdown-git/4-collaboratif.md)
