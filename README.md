@@ -4,7 +4,7 @@ Brève description
 
 ### 1. Introduction à Git
    - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/git-presentation.md)
-   - [1.3. Pourquoi utiliser Git ?](./doc/markdown-git/git-presentation.md)
+   - [1.2. Pourquoi utiliser Git ?](./doc/markdown-git/git-presentation.md)
    - [1.4. Différence entre Git et GitHub (ou autres plateformes de gestion de code)](./doc/markdown-git/git-presentation.md)
 
 ## 2. Installation et configuration de Git
