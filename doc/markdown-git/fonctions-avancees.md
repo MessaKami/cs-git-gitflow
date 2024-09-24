@@ -26,3 +26,21 @@ Si tu veux tout stash sans inclure les fichiers déjà indexer par git add, tu p
 Si tu veux inclure les fichiers non-traqués :
 
 `git stash -u`
+
+### 5.2. Rebase
+
+Pour faire simple, git rebase va permettre de rendre propre notre historique git ; notamment dans l’utilisation des branches. Cette commande va permettre de prendre une branche et de venir la greffer ailleurs dans notre historique.
+
+Imaginons que la branche principale ressemble à ça :
+
+A - B – C
+
+Que ta branche ressemble à ça :
+
+A – B - D
+
+Si tu fais un git rebase, cela prendra les modifications de C et viendra greffer tes modifications (D) après. Au niveau de l’historique, il va fusionner les commits de manière linéaire. Cela peut engendrer plusieurs conflits, un par commit.
+
+A – B – C - D
+
+A l’instar de git rebase, le git merge va venir créer un nouveau commit de fusion sans réécrire l’historique. Cela permet d’avoir un historique plus complet mais si l’on travaille avec plusieurs branches, cela peut vite rendre l’historique trop complexe dans la mesure où il va conserver séparément l’historique des deux branches.
