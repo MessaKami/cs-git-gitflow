@@ -32,7 +32,7 @@ Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités
   ```bash
   git switch -c <nom_branche>
   ```
-## 4.3. Fusionner des branches (`git merge`, `git rebase`)
+## 4.3. Fusionner des branches (`git merge` et `git rebase`)
 Lorsque vous travaillez avec des branches, il existe deux manières principales d'intégrer les modifications d'une branche dans une autre : **merge** et **rebase**. Alors que `git merge` conserve l'historique de la branche séparée, `git rebase` réécrit l'historique pour donner l'apparence que toutes les modifications ont été faites en ligne droite, ce qui peut rendre l'historique plus propre.
 
 - **Fusionner une branche avec `git rebase`** :
