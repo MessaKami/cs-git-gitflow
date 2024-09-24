@@ -135,3 +135,17 @@ Pour garder votre dépôt local synchronisé avec les modifications faites par l
 - **Pull en fast-forward** : Si votre branche locale est derrière la branche distante, Git fera un fast-forward pour mettre à jour votre branche locale.
 
 - **Pull avec conflits** : Si des modifications locales et distantes entrent en conflit, vous devrez résoudre les conflits manuellement avant de terminer le `git pull`.
+
+---
+
+### 4.7. Travailler avec des forks et des pull requests
+- **Forks** :
+  Un fork est une copie du dépôt principal dans votre propre compte Git. Cela permet de travailler de manière indépendante sur un projet, souvent utilisé dans les contributions open-source. Une fois les modifications faites dans votre fork, vous pouvez proposer ces changements au projet original.
+
+- **Pull Requests (PR)** :
+  Une pull request permet à un contributeur de notifier les mainteneurs du projet original qu’il a des modifications prêtes à être fusionnées. Pour créer une pull request :
+  1. Faites vos modifications dans une branche de votre fork.
+  2. Poussez cette branche vers votre dépôt distant.
+  3. Allez sur l’interface de GitHub (ou une autre plateforme) et créez une pull request pour demander la fusion de vos modifications dans le dépôt original.
+
+- **Examen des PR** : Avant de fusionner une PR, l'équipe du projet peut la réviser, laisser des commentaires et demander des modifications supplémentaires.
