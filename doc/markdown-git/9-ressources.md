@@ -44,3 +44,11 @@ La documentation officielle de Git est une ressource essentielle pour approfondi
 
 - **[Documentation officielle Git](https://git-scm.com/doc)** : Référence complète pour toutes les commandes et concepts Git.
 - **[Pro Git book](https://git-scm.com/book/en/v2)** : Livre gratuit qui couvre tous les aspects de Git, depuis les bases jusqu'à des concepts avancés.
+
+### 9.6. Cours et tutoriels en ligne sur Git
+Pour améliorer vos compétences Git, voici quelques ressources de cours en ligne :
+
+- **[GitHub Learning Lab](https://lab.github.com/)** : Plateforme interactive pour apprendre Git et GitHub à travers des exercices pratiques.
+- **[Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)** : Tutoriels de Git par les créateurs de Bitbucket et Jira, couvrant les bases ainsi que des sujets avancés.
+- **[Udemy - Git Complete: The definitive, step-by-step guide to Git](https://www.udemy.com/course/git-complete/)** : Cours vidéo couvrant l'utilisation complète de Git, de l'installation à l'usage quotidien.
+- **[freeCodeCamp - Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)** : Tutoriel YouTube complet et gratuit pour apprendre Git depuis zéro.
