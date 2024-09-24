@@ -34,10 +34,7 @@ Brève description
 ## 5. Fonctionnalités avancées de Git
    - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](#/README.md)
    - [5.2. Rebase (`git rebase`)](#/README.md)
-   - [5.3. Cherry-picking des commits (`git cherry-pick`)](#/README.md)
    - [5.4. Tags (`git tag`)](#/README.md)
-   - [5.5. Git bisect : Trouver les bugs (`git bisect`)](#/README.md)
-   - [5.6. Utilisation des sous-modules Git (`git submodule`)](#/README.md)
 
 ## 6. Gestion des dépôts distants
    - [6.1. Ajouter un dépôt distant (`git remote add`)](#/README.md)
