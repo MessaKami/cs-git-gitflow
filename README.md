@@ -31,9 +31,9 @@ Brève description
    - [4.7. Travailler avec des forks et des pull requests](#/README.md)
 
 ## 5. Fonctionnalités avancées de Git
-   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/installation-config.md)
-   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/installation-config.md)
-   - [5.4. Tags (`git tag`)](./doc/markdown-git/installation-config.md)
+   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/fonctions-avancees.md)
+   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/fonctions-avancees.md)
+   - [5.4. Tags (`git tag`)](./doc/markdown-git/fonctions-avancees.md)
 
 ## 6. Gestion des dépôts distants
    - [6.1. Ajouter un dépôt distant (`git remote add`)](#/README.md)
