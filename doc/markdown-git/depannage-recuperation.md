@@ -380,3 +380,139 @@ Git indique un conflit dans `src/app.js`.
    - La fusion est maintenant complète.
 
 ---
+
+**8.4. Sauvegarde et restauration de projets Git**
+
+La sauvegarde régulière de votre dépôt Git est une bonne pratique pour prévenir la perte de données et faciliter la collaboration. Git offre plusieurs méthodes pour sauvegarder et restaurer vos projets.
+
+---
+
+**Cloner le dépôt vers un autre emplacement**
+
+Le clonage du dépôt crée une copie complète de l'historique.
+
+- **Commande** :
+
+  ```bash
+  git clone [url/chemin_du_dépôt] [chemin_de_destination]
+  ```
+
+- **Exemple** :
+
+  - Sauvegarder le dépôt localement :
+
+    ```bash
+    git clone /path/to/your/repo /path/to/backup/repo_backup
+    ```
+
+- **Note** : Le clone contient tout l'historique du dépôt.
+
+---
+
+**Créer une archive du dépôt avec git bundle**
+
+La commande `git bundle` permet de créer un fichier unique contenant l'intégralité du dépôt.
+
+- **Créer un bundle** :
+
+  ```bash
+  git bundle create [nom_du_fichier.bundle] --all
+  ```
+
+- **Exemple** :
+
+  ```bash
+  git bundle create my_project.bundle --all
+  ```
+
+  - Le fichier `my_project.bundle` contient tout le dépôt.
+
+- **Stockez le bundle** :
+
+  - Vous pouvez copier le bundle sur un disque externe, un serveur distant ou le stocker dans le cloud.
+
+---
+
+**Restaurer un dépôt à partir d'un bundle**
+
+- **Cloner le bundle** :
+
+  ```bash
+  git clone my_project.bundle /path/to/new_repo
+  ```
+
+- **Vérifier le dépôt restauré** :
+
+  - Le nouveau dépôt contient tout l'historique et les branches du dépôt original.
+
+- **Mettre à jour les remotes** :
+
+  - Si vous souhaitez pousser vers un dépôt distant, ajoutez un remote :
+
+    ```bash
+    git remote add origin [url_du_dépôt_distant]
+    git push -u origin --all
+    ```
+
+---
+
+**Exporter une archive du dernier état du code**
+
+Si vous avez besoin d'une copie du code sans le suivi Git (par exemple, pour livrer une version à un client) :
+
+- **Commande** :
+
+  ```bash
+  git archive -o [nom_du_fichier.zip] [révision]
+  ```
+
+- **Exemple** :
+
+  - Exporter le dernier état du code :
+
+    ```bash
+    git archive -o latest_code.zip HEAD
+    ```
+
+  - Exporter une version spécifique :
+
+    ```bash
+    git archive -o v1.0.0.zip v1.0.0
+    ```
+
+    - Où `v1.0.0` est le tag de la version.
+
+---
+
+**Sauvegarde automatisée avec des scripts**
+
+Pour automatiser les sauvegardes, vous pouvez créer un script bash ou utiliser des outils comme `cron` pour exécuter régulièrement les commandes de sauvegarde.
+
+- **Exemple de script de sauvegarde quotidienne** :
+
+  ```bash
+  #!/bin/bash
+
+  BACKUP_DIR="/path/to/backup"
+  DATE=$(date +%Y-%m-%d)
+  REPO_PATH="/path/to/your/repo"
+
+  cd $REPO_PATH
+  git bundle create $BACKUP_DIR/backup_$DATE.bundle --all
+  ```
+
+- **Planifier le script avec cron** :
+
+  - Éditez la crontab :
+
+    ```bash
+    crontab -e
+    ```
+
+  - Ajoutez une ligne pour exécuter le script tous les jours à 2h du matin :
+
+    ```bash
+    0 2 * * * /path/to/backup_script.sh
+    ```
+
+---
