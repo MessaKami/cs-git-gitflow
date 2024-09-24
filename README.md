@@ -3,15 +3,15 @@
 Brève description
 
 ### 1. Introduction à Git
-   - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/git-presentation.md)
-   - [1.2. Pourquoi utiliser Git ?](./doc/markdown-git/git-presentation.md)
-   - [1.3. Git dans la pratique ?](./doc/markdown-git/git-presentation.md)
-   - [1.4. Différence entre Git et GitHub](./doc/markdown-git/git-presentation.md)
+   - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/1-presentation.md)
+   - [1.2. Pourquoi utiliser Git ?](./doc/markdown-git/1-presentation.md)
+   - [1.3. Git dans la pratique ?](./doc/markdown-git/1-presentation.md)
+   - [1.4. Différence entre Git et GitHub](./doc/markdown-git/1-presentation.md)
 
 ## 2. Installation et configuration de Git
-   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/installation-config.md)
-   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/installation-config.md)
-   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/installation-config.md)
+   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/2-config.md)
+   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/2-config.md)
+   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-config.md)
 
 ## 3. Les bases de Git
    - [3.1. Initialiser un dépôt Git (`git init`)](#/README.md)
@@ -23,18 +23,18 @@ Brève description
    - [3.7. Annuler des modifications (`git checkout`, `git reset`)](#/README.md)
 
 ## 4. Travail collaboratif avec Git
-   - [4.1. Introduction aux branches](./doc/markdown-git/git-collaboratif.md)
-   - [4.2. Créer et basculer entre les branches (`git branch`, `git checkout`, `git switch`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.3. Fusionner des branches (`git merge`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.4. Gérer les conflits de merge](./doc/markdown-git/git-collaboratif.md)
-   - [4.5. Envoyer des modifications vers un dépôt distant (`git push`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.6. Récupérer les modifications d'un dépôt distant (`git pull`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.7. Travailler avec des forks et des pull requests](./doc/markdown-git/git-collaboratif.md)
+   - [4.1. Introduction aux branches](./doc/markdown-git/4-collaboratif.md)
+   - [4.2. Créer et basculer entre les branches (`git branch`, `git checkout`, `git switch`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.3. Fusionner des branches (`git merge`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.4. Gérer les conflits de merge](./doc/markdown-git/4-collaboratif.md)
+   - [4.5. Envoyer des modifications vers un dépôt distant (`git push`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.6. Récupérer les modifications d'un dépôt distant (`git pull`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.7. Travailler avec des forks et des pull requests](./doc/markdown-git/4-collaboratif.md)
 
 ## 5. Fonctionnalités avancées de Git
-   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/fonctions-avancees.md)
-   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/fonctions-avancees.md)
-   - [5.4. Tags (`git tag`)](./doc/markdown-git/fonctions-avancees.md)
+   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/5-fonctions-avancees.md)
+   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/5-fonctions-avancees.md)
+   - [5.4. Tags (`git tag`)](./doc/markdown-git/5-fonctions-avancees.md)
 
 ## 6. Gestion des dépôts distants
    - [6.1. Ajouter un dépôt distant (`git remote add`)](#/README.md)
