@@ -8,9 +8,9 @@ Brève description
    - [1.4. Différence entre Git et GitHub (ou autres plateformes de gestion de code)](#/README.md)
 
 ## 2. Installation et configuration de Git
-   - [2.1. Installer Git (Windows, macOS, Linux)](./src/installation-config.md)
-   - [2.2. Configuration initiale de Git (`git config`)](./src/installation-config.md)
-   - [2.3. Générer et ajouter une clé SSH](./src/installation-config.md)
+   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/installation-config.md)
+   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/installation-config.md)
+   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/installation-config.md)
 
 ## 3. Les bases de Git
    - [3.1. Initialiser un dépôt Git (`git init`)](#/README.md)
