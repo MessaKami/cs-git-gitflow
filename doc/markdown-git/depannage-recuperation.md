@@ -133,3 +133,86 @@ Supposons que vous avez commis un mot de passe sensible dans votre dépôt et qu
    - Les modifications sont partagées avec l'équipe sans réécrire l'historique.
 
 ---
+
+**8.2. Récupérer des fichiers supprimés**
+
+Il peut arriver de supprimer accidentellement un fichier suivi par Git. Heureusement, Git conserve l'historique de vos fichiers, ce qui facilite leur récupération.
+
+---
+
+**Restaurer un fichier supprimé avant le commit**
+
+Si vous avez supprimé un fichier, mais n'avez pas encore commis la suppression :
+
+- **Commande** :
+
+  ```bash
+  git checkout -- [chemin/du/fichier]
+  ```
+
+- **Exemple** :
+
+  Supposons que vous avez supprimé `src/app.js` par erreur.
+
+  ```bash
+  git checkout -- src/app.js
+  ```
+
+  - Le fichier est restauré à sa dernière version indexée.
+
+---
+
+**Restaurer un fichier supprimé après le commit**
+
+Si vous avez déjà commis la suppression du fichier, vous devez récupérer une version antérieure du fichier depuis l'historique.
+
+1. **Trouver le commit où le fichier existait** :
+
+   ```bash
+   git log -- [chemin/du/fichier]
+   ```
+
+   - Cela affiche l'historique des commits concernant ce fichier.
+   - Notez l'ID du dernier commit où le fichier était présent (par exemple, `f1e2d3c`).
+
+2. **Récupérer le fichier depuis ce commit** :
+
+   ```bash
+   git checkout [commit_id] -- [chemin/du/fichier]
+   ```
+
+   - **Exemple** :
+
+     ```bash
+     git checkout f1e2d3c -- src/app.js
+     ```
+
+     - Le fichier `src/app.js` est restauré à l'état qu'il avait dans le commit `f1e2d3c`.
+
+3. **Valider la restauration** :
+
+   - Ajoutez le fichier restauré à l'index :
+
+     ```bash
+     git add src/app.js
+     ```
+
+   - Commettez la restauration :
+
+     ```bash
+     git commit -m "Restauration de src/app.js supprimé par erreur"
+     ```
+
+---
+
+**Astuce : Restauration rapide depuis le dernier état connu**
+
+Si vous savez que vous voulez la dernière version du fichier avant sa suppression, vous pouvez utiliser :
+
+```bash
+git checkout HEAD~1 -- [chemin/du/fichier]
+```
+
+- Cela récupère le fichier depuis le commit précédent.
+
+---
