@@ -38,3 +38,9 @@ L'intégration continue (CI) consiste à tester automatiquement votre code à ch
 - **CircleCI** : Plateforme CI/CD performante avec intégration Git, qui exécute des pipelines pour tester et déployer des applications.
 
 Ces outils aident à garantir que les nouvelles modifications n’introduisent pas de bugs et automatisent les déploiements.
+
+### 9.5. Ressources et documentation officielle Git
+La documentation officielle de Git est une ressource essentielle pour approfondir votre compréhension et résoudre des problèmes :
+
+- **[Documentation officielle Git](https://git-scm.com/doc)** : Référence complète pour toutes les commandes et concepts Git.
+- **[Pro Git book](https://git-scm.com/book/en/v2)** : Livre gratuit qui couvre tous les aspects de Git, depuis les bases jusqu'à des concepts avancés.
