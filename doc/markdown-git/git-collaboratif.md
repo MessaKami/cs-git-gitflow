@@ -32,3 +32,18 @@ Git permet de gérer les branches pour travailler sur plusieurs fonctionnalités
   ```bash
   git switch -c <nom_branche>
   ```
+### 4.3. Fusionner des branches (`git merge`)
+Une fois que vous avez terminé de travailler sur une fonctionnalité dans une branche, vous voudrez probablement fusionner cette branche dans une autre (souvent la branche principale). La fusion permet d’intégrer les modifications de la branche source dans la branche cible.
+
+- **Fusionner une branche** :
+  Assurez-vous d’être sur la branche où vous voulez fusionner (par exemple, la branche `main`), puis exécutez :
+  ```bash
+  git merge <nom_branche>
+  ```
+  Cela fusionnera les modifications de `<nom_branche>` dans la branche actuelle.
+
+- **Fusion en fast-forward** :
+  Si la branche que vous fusionnez n'a pas de commits intermédiaires qui diffèrent de la branche actuelle, Git peut effectuer une fusion "fast-forward", ce qui signifie qu'il avance simplement la tête de la branche actuelle vers le dernier commit de la branche fusionnée.
+
+- **Fusion avec commit de merge** :
+  Si la branche a des commits différents, Git créera un commit de fusion pour enregistrer l'historique de la fusion.
