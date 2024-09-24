@@ -29,3 +29,12 @@ Visualiser l'historique des commits aide à mieux comprendre l'évolution du pro
 - **`gitg`** : Interface graphique similaire à `gitk`, avec une présentation propre et plus moderne.
   
 Ces outils permettent de suivre les branches, de visualiser les fusions et d’analyser les commits.
+
+### 9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)
+L'intégration continue (CI) consiste à tester automatiquement votre code à chaque changement. Voici quelques outils populaires de CI intégrés à Git :
+
+- **Jenkins** : Serveur CI open-source, très flexible et personnalisable.
+- **Travis CI** : Outil de CI simple, souvent utilisé pour des projets open-source sur GitHub. Il exécute automatiquement les tests et déploie les projets après chaque push.
+- **CircleCI** : Plateforme CI/CD performante avec intégration Git, qui exécute des pipelines pour tester et déployer des applications.
+
+Ces outils aident à garantir que les nouvelles modifications n’introduisent pas de bugs et automatisent les déploiements.
