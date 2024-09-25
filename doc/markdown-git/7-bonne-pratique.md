@@ -1,5 +1,3 @@
----
-
 ## 7.1. Rédiger des messages de commit clairs
 
 Rédiger des messages de commit clairs est crucial pour maintenir un historique Git lisible et utile pour toute l'équipe. Voici quelques bonnes pratiques à suivre pour écrire des messages de commit efficaces :
