@@ -37,3 +37,14 @@ git add monfichier.txt
 ```bash
 git add .
 ```
+
+## 3.4. Committer des changements (`git commit`)
+
+Une fois que les modifications sont ajoutées à la staging area avec `git add`, vous pouvez utiliser `git commit` pour enregistrer ces changements dans l'historique du projet. Chaque commit doit inclure un message descriptif.
+
+### Exemple :
+```bash
+git commit -m "Ajout de la fonctionnalité X"
+```
+
+Cela enregistre un instantané des fichiers suivis dans Git avec le message fourni.
