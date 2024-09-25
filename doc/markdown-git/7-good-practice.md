@@ -18,3 +18,15 @@ Les conflits Git se produisent lorsque des modifications concurrentes sont effec
 - [Astuces](#astuces)
 
 ---
+
+## Identification des Conflits
+
+Lors d'une opération `git merge`, `git rebase` ou `git cherry-pick`, Git peut signaler des conflits :
+
+```bash
+$ git pull
+Auto-merging fichier.txt
+CONFLICT (content): Merge conflict in fichier.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
