@@ -48,3 +48,15 @@ git commit -m "Ajout de la fonctionnalité X"
 ```
 
 Cela enregistre un instantané des fichiers suivis dans Git avec le message fourni.
+
+## 3.5. Vérifier l'état du dépôt (`git status`)
+
+La commande `git status` montre l'état actuel du projet. Elle liste les fichiers modifiés, non suivis, ou en attente de commit, et donne un aperçu de ce qui se passe dans votre dépôt.
+
+### Exemple :
+```bash
+git status
+```
+
+Cela vous aide à savoir quels fichiers sont prêts à être commités, lesquels ne sont pas encore suivis, et s'il y a des conflits à résoudre.
+
