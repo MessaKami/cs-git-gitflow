@@ -79,6 +79,10 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 - **Role**: Tech lead
 - **GitHub**: [Ayoub Laroussi](https://github.com/EyeOne2-0)
 
+#### Messaoud Houri
+- **Role**: Developer
+- **GitHub**: [Messaoud Houri](https://github.com/MessaKami)
+
 ---
 ## License
 
