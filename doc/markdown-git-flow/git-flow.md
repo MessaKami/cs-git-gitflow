@@ -61,3 +61,45 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
      git merge feature/<nom_fonctionnalité>
      git branch -d feature/<nom_fonctionnalité>
      ```
+
+2. **Release branches** (`release/`) :
+   - Utilisées pour préparer une nouvelle version.
+   - Créées à partir de `develop`, puis fusionnées dans `main` et `develop` une fois la version prête pour la production.
+   - Convention de nommage : `release/<version>`
+
+   **Exemples de commandes** :
+   - **Créer une release branch** :
+     ```bash
+     git checkout develop
+     git checkout -b release/<version>
+     ```
+   - **Fusionner une release branch dans main et develop** :
+     ```bash
+     git checkout main
+     git merge release/<version>
+     git tag <version>  # Taguer la nouvelle version
+     git checkout develop
+     git merge release/<version>
+     git branch -d release/<version>
+     ```
+
+3. **Hotfix branches** (`hotfix/`) :
+   - Utilisées pour corriger rapidement des bugs critiques en production.
+   - Créées à partir de `main`, puis fusionnées à la fois dans `main` et `develop` (ou `release` si une release est en préparation).
+   - Convention de nommage : `hotfix/<description_bug>`
+
+   **Exemples de commandes** :
+   - **Créer une hotfix branch** :
+     ```bash
+     git checkout main
+     git checkout -b hotfix/<description_bug>
+     ```
+   - **Fusionner une hotfix branch dans main et develop** :
+     ```bash
+     git checkout main
+     git merge hotfix/<description_bug>
+     git tag <version_hotfix>
+     git checkout develop
+     git merge hotfix/<description_bug>
+     git branch -d hotfix/<description_bug>
+     ```
