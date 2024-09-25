@@ -43,9 +43,9 @@ Brève description
 
 ## 7. Bonnes pratiques Git
    - [7.1. Rédiger des messages de commit clairs](./doc/markdown-git/7-good-practice.md)
-   - [7.3. Git et intégration continue (CI)](./doc/markdown-git/7-good-practice.md)
-   - [7.4. Gestion des conflits](./doc/markdown-git/7-good-practice.md)
-   - [7.5. Ne jamais committer des fichiers sensibles (utiliser `.gitignore`)](./doc/markdown-git/7-good-practice.md)
+   - [7.2. Git et intégration continue (CI)](./doc/markdown-git/7-good-practice.md)
+   - [7.3. Gestion des conflits](./doc/markdown-git/7-good-practice.md)
+   - [7.4. Ne jamais committer des fichiers sensibles (utiliser `.gitignore`)](./doc/markdown-git/7-good-practice.md)
 
 ## 8. Dépannage et récupération
    - [8.1. Annuler un commit (`git reset`, `git revert`)](./doc/markdown-git/8-depannage-recuperation.md)
