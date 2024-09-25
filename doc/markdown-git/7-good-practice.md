@@ -95,3 +95,29 @@ Utiliser l'outil de fusion :
 $ git mergetool
 ```
 
+## Prévention des Conflits
+
+- **Communication d'équipe** : Informez-vous mutuellement des modifications majeures.
+- **Mises à jour fréquentes** : Intégrez régulièrement les changements de la branche principale.
+- **Branches de fonctionnalité** : Isolez les travaux en cours pour minimiser les conflits.
+
+## Commandes Utiles
+
+- **Voir les conflits restants** :
+
+  ```bash
+  $ git diff --name-only --diff-filter=U
+  ```
+
+- **Afficher les différences** :
+
+  ```bash
+  $ git diff
+  ```
+
+- **Afficher les marqueurs de conflit** :
+
+  ```bash
+  $ git diff --merge
+  ```
+
