@@ -40,3 +40,29 @@ $ git status
 
 Les fichiers en conflit apparaîtront sous la section **"Unmerged paths"**.
 
+## Résolution des Conflits
+
+1. **Ouvrir les fichiers en conflit** : Les marqueurs de conflit ressemblent à ceci :
+
+   ```diff
+   <<<<<<< HEAD
+   Contenu de la branche actuelle.
+   =======
+   Contenu de la branche fusionnée.
+   >>>>>>> nom-de-la-branche
+   ```
+
+2. **Éditer les fichiers** : Choisissez quelles modifications conserver ou combinez-les.
+
+3. **Marquer les conflits comme résolus** :
+
+   ```bash
+   $ git add fichier.txt
+   ```
+
+4. **Valider les modifications** :
+
+   ```bash
+   $ git commit -m "Résolution des conflits sur fichier.txt"
+   ```
+
