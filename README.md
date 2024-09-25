@@ -54,7 +54,7 @@ Brève description
    - [8.4. Sauvegarde et restauration de projets Git](./doc/markdown-git/8-depannage-recuperation.md)
 
 ## 9. Ressources et outils supplémentaires
-   - [9.1. Alias Git : Simplifier l'utilisation des commandes Git](#/README.md)
+   - [9.1. Alias Git : Simplifier l'utilisation des commandes Git](./doc/markdown-git/9-ressources.md)
    - [9.2. Utiliser Git avec un IDE (VSCode, IntelliJ, etc.)](#/README.md)
    - [9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](#/README.md)
    - [9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](#/README.md)
