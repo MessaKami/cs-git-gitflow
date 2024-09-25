@@ -80,3 +80,18 @@ Les fichiers en conflit apparaîtront sous la section **"Unmerged paths"**.
   $ git rebase --abort
   ```
 
+## Utilisation d'Outils de Fusion
+
+Configurer un outil de fusion (par exemple, Meld) :
+
+```bash
+$ git config --global merge.tool meld
+$ git config --global mergetool.meld.path "/chemin/vers/meld"
+```
+
+Utiliser l'outil de fusion :
+
+```bash
+$ git mergetool
+```
+
