@@ -59,7 +59,7 @@ Brève description
    - [9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](./doc/markdown-git/9-ressources.md)
    - [9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](./doc/markdown-git/9-ressources.md)
    - [9.5. Ressources et documentation officielle Git](./doc/markdown-git/9-ressources.md)
-   - [9.6. Cours et tutoriels en ligne sur Git](#/README.md)
+   - [9.6. Cours et tutoriels en ligne sur Git](./doc/markdown-git/9-ressources.md)
 
 ## Project Description
 
