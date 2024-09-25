@@ -31,3 +31,42 @@ git remote -v
 
 Cette commande affichera la liste des dépôts distants associés à votre projet, avec leurs URL respectives.
 
+### 6.2. Gérer Plusieurs Dépôts Distants
+
+Il est courant d'avoir plusieurs dépôts distants pour un même projet, par exemple un dépôt principal et des dépôts pour des fonctionnalités ou des environnements spécifiques.
+
+#### Lister les Dépôts Distants
+
+Pour lister tous les dépôts distants existants et leurs URL, utilisez :
+
+```bash
+git remote -v
+```
+
+#### Renommer un Dépôt Distant
+
+Si vous souhaitez renommer un dépôt distant, utilisez la commande suivante :
+
+```bash
+git remote rename <ancien-nom> <nouveau-nom>
+```
+
+**Exemple :**
+
+```bash
+git remote rename origin main-repo
+```
+
+#### Modifier l'URL d'un Dépôt Distant
+
+Pour changer l'URL d'un dépôt distant existant, utilisez :
+
+```bash
+git remote set-url <nom> <nouvelle-url>
+```
+
+**Exemple :**
+
+```bash
+git remote set-url origin git@github.com:votre-utilisateur/nouveau-depot.git
+```
