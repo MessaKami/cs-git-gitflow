@@ -138,3 +138,14 @@ Git Flow propose des commandes qui simplifient la gestion des branches. Voici le
   ```bash
   git flow hotfix finish <nom_hotfix>
   ```
+
+## 7. Avantages de Git Flow
+
+- **Organisation claire** : Les branches sont bien définies, chaque type de branche ayant un objectif précis. Cela permet une séparation nette des différentes phases de développement (fonctionnalités, correctifs, versions).
+- **Gestion des versions** : Grâce aux branches de release et aux tags, la gestion des versions devient simple et structurée, facilitant les déploiements.
+- **Travailler en parallèle** : Git Flow permet de développer plusieurs fonctionnalités et de résoudre des bugs simultanément sans affecter la stabilité du projet en production.
+
+## 8. Limites de Git Flow
+
+- **Complexité pour les petits projets** : Pour les petits projets avec des équipes réduites, Git Flow peut sembler lourd et trop complexe. Dans ces cas, un workflow plus simple comme GitHub Flow peut suffire.
+- **Non adapté au Continuous Delivery** : Si vous utilisez une méthodologie de déploiement continu, où chaque commit est potentiellement déployé en production, Git Flow peut ne pas être optimal. Un workflow plus léger, sans les branches de release, pourrait être préférable.
