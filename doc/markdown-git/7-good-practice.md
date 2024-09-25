@@ -11,3 +11,9 @@ Souvent, la CI est déclanchée par une commande Git comme un push ou une PR; ce
 Cette outil va alors prendre le code de la branche concernée pour le compiler ou le construire dans un environemment propre. Si le code est compilé / construit sans erreur, l'outil va alors lancer les tests automatiques pour vérifier que le code entrant n'intègre ni régressions, ni bugs.
 
 Si la compilation ou les tests ne fonctionnent pas, l'outil de CI va le notifier aux développeurs afin qu'il puissent corriger le problèmes rapidement, c'est ce qui permet de maintenir une qualité de code constante.
+
+#### 7.2.2 L'interaction entre la CI et Git
+
+Dans la pratique CI, il est recommandé d'intégrer fréquement les modifictions dans une branche principale. Grâce au fonctionnement par branche de Git, le développement va être isolé jusqu'à ce que les modifications soient prêtent à être fusionnées via, une PR par exemple.
+
+Avant que la branche de développement ne fusionne avec la principale, l'outil de CI va être appelé pour procéder aux tests comme expliqué un peu plus haut. S'il y a le moindre problème, Git va refuser la fusion tant qu'il ne sera pas résolu.
