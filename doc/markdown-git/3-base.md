@@ -76,3 +76,31 @@ git log --oneline
 
 Cela affiche les commits avec seulement l'ID abrégé et le message de commit.
 
+## 3.7. Annuler des modifications (`git checkout`, `git reset`)
+
+##### Annuler des changements dans un fichier spécifique (avant `git add`) :
+```bash
+git checkout -- monfichier.txt
+```
+
+Cette commande restaure le fichier dans l'état du dernier commit, annulant ainsi toutes les modifications locales non ajoutées.
+
+##### Annuler des modifications ajoutées à la staging area (`git reset`) :
+```bash
+git reset monfichier.txt
+```
+
+Cela retire le fichier de la staging area mais conserve les modifications locales.
+
+##### Annuler un commit local (`git reset --soft`, `git reset --hard`) :
+- **`git reset --soft`** : annule le dernier commit, mais conserve les modifications dans la staging area.
+- **`git reset --hard`** : annule le commit et toutes les modifications locales, en réinitialisant l'état du dépôt au dernier commit.
+
+### Exemple :
+```bash
+git reset --hard HEAD~1
+```
+
+Cela réinitialise le dépôt à l'état du commit précédent, en supprimant toutes les modifications locales.
+
+---
