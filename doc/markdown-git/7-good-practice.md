@@ -66,3 +66,17 @@ Les fichiers en conflit apparaîtront sous la section **"Unmerged paths"**.
    $ git commit -m "Résolution des conflits sur fichier.txt"
    ```
 
+## Abandonner une Opération en Cours
+
+- **Annuler une fusion** :
+
+  ```bash
+  $ git merge --abort
+  ```
+
+- **Annuler un rebase** :
+
+  ```bash
+  $ git rebase --abort
+  ```
+
