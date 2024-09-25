@@ -69,7 +69,8 @@ Brève description
    - [10.5. Les branches de support](./doc/markdown-git-flow/git-flow.md)
    - [10.6. Utilisation des commandes Git Flow](./doc/markdown-git-flow/git-flow.md)
    - [10.7. Avantages de Git Flow](./doc/markdown-git-flow/git-flow.md)
-   - [10.8. Limites de Git Flow](./doc/markdown-git/9-ressources.md)
+   - [10.8. Limites de Git Flow](./doc/markdown-git-flow/git-flow.md)
+   
 ## Project Description
 
 Ce document sert de guide rapide pour comprendre et utiliser Git et GitFlow efficacement. Que vous soyez un développeur débutant cherchant à se familiariser avec les concepts fondamentaux ou un utilisateur expérimenté souhaitant renforcer ses compétences, cette cheat sheet couvre une large gamme de sujets pertinents. 
