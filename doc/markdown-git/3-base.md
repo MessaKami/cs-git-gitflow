@@ -1,4 +1,4 @@
-# Guide Git - Commandes de base
+# 3. Les bases de Git
 
 Ce guide présente les principales commandes Git utilisées dans la gestion de version et le suivi de projets.
 
