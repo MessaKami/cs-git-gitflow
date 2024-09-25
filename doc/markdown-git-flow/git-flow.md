@@ -41,3 +41,23 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
 
 2. **`develop`** :  
    Cette branche est utilisée pour intégrer toutes les nouvelles fonctionnalités. C'est l'environnement où le code est testé avant d'être prêt pour la production.
+
+## 5. Les branches de support
+
+1. **Feature branches** (`feature/`) :
+   - Utilisées pour le développement de nouvelles fonctionnalités.
+   - Créées à partir de `develop` et fusionnées dans `develop` une fois la fonctionnalité terminée.
+   - Convention de nommage : `feature/<nom_fonctionnalité>`
+
+   **Exemples de commandes** :
+   - **Créer une feature branch** :
+     ```bash
+     git checkout develop
+     git checkout -b feature/<nom_fonctionnalité>
+     ```
+   - **Fusionner une feature branch dans develop** :
+     ```bash
+     git checkout develop
+     git merge feature/<nom_fonctionnalité>
+     git branch -d feature/<nom_fonctionnalité>
+     ```
