@@ -10,3 +10,16 @@ La commande `git init` permet d'initialiser un nouveau dépôt Git dans un répe
 ```bash
 git init
 ```
+
+Après cette commande, Git commence à suivre les modifications dans ce dossier.
+
+## 3.2. Cloner un dépôt (`git clone`)
+
+`git clone` est utilisé pour copier un dépôt Git existant (local ou distant) vers votre machine. Cela inclut tout l'historique et les fichiers actuels du projet.
+
+### Exemple :
+```bash
+git clone https://github.com/utilisateur/nom-du-repo.git
+```
+
+Cela crée un dossier local contenant les fichiers du dépôt, ainsi que son historique.
