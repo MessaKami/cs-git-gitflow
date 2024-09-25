@@ -83,6 +83,10 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 - **Role**: Developer
 - **GitHub**: [Messaoud Houri](https://github.com/MessaKami)
 
+#### Enguerran Smagghe
+- **Role**: Developer
+- **GitHub**: [Enguerran Smagghe](https://github.com/EnguerranSGG)
+
 ---
 ## License
 
