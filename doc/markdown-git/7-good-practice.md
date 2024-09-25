@@ -30,3 +30,13 @@ CONFLICT (content): Merge conflict in fichier.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
+## Visualisation des Fichiers en Conflit
+
+Liste des fichiers en conflit :
+
+```bash
+$ git status
+```
+
+Les fichiers en conflit apparaîtront sous la section **"Unmerged paths"**.
+
