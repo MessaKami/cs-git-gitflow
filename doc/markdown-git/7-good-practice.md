@@ -121,3 +121,11 @@ $ git mergetool
   $ git diff --merge
   ```
 
+## Astuces
+
+- **Commits atomiques** : Des commits petits et spécifiques facilitent la résolution des conflits.
+- **Utiliser `git stash`** : Avant de tirer des changements, sauvegardez vos modifications en cours.
+
+---
+
+**Note** : Ce cheat sheet est un guide rapide. Pour des situations complexes, consultez la [documentation officielle de Git](https://git-scm.com/docs).
