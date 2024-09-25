@@ -23,3 +23,17 @@ git clone https://github.com/utilisateur/nom-du-repo.git
 ```
 
 Cela crée un dossier local contenant les fichiers du dépôt, ainsi que son historique.
+
+## 3.3. Suivi des fichiers (`git add`)
+
+La commande `git add` permet d'ajouter des modifications dans la "staging area", c’est-à-dire de préparer les fichiers pour un commit. Vous pouvez ajouter des fichiers individuels ou tous les fichiers modifiés.
+
+### Ajouter un fichier spécifique :
+```bash
+git add monfichier.txt
+```
+
+### Ajouter tous les fichiers modifiés :
+```bash
+git add .
+```
