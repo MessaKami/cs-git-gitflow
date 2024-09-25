@@ -60,3 +60,19 @@ git status
 
 Cela vous aide à savoir quels fichiers sont prêts à être commités, lesquels ne sont pas encore suivis, et s'il y a des conflits à résoudre.
 
+## 3.6. Voir l'historique des commits (`git log`)
+
+La commande `git log` permet de voir l'historique des commits dans le dépôt, avec les messages de commit, l'auteur, la date et l'identifiant unique (SHA) de chaque commit.
+
+### Exemple :
+```bash
+git log
+```
+
+### Pour une vue simplifiée :
+```bash
+git log --oneline
+```
+
+Cela affiche les commits avec seulement l'ID abrégé et le message de commit.
+
