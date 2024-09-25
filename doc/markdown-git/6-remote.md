@@ -70,3 +70,28 @@ git remote set-url <nom> <nouvelle-url>
 ```bash
 git remote set-url origin git@github.com:votre-utilisateur/nouveau-depot.git
 ```
+
+### 6.3. Supprimer un Dépôt Distant
+
+Si vous devez supprimer un dépôt distant que vous n'utilisez plus, vous pouvez le faire avec la commande suivante :
+
+```bash
+git remote remove <nom>
+```
+
+**Exemple :**
+
+```bash
+git remote remove origin
+```
+
+**Vérification de la suppression :**
+
+Après avoir supprimé un dépôt distant, vous pouvez exécuter à nouveau :
+
+```bash
+git remote -v
+```
+
+pour confirmer qu'il n'apparaît plus dans la liste.
+
