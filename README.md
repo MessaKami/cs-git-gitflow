@@ -87,6 +87,10 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 - **Role**: Developer
 - **GitHub**: [Enguerran Smagghe](https://github.com/EnguerranSGG)
 
+#### Justin Didelot
+- **Role**: Developer
+- **GitHub**: [Justin Didelot](https://github.com/Srekaens)
+
 ---
 ## License
 
