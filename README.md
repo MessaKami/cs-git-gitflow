@@ -3,64 +3,63 @@
 Brève description
 
 ### 1. Introduction à Git
-   - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/git-presentation.md)
-   - [1.2. Pourquoi utiliser Git ?](./doc/markdown-git/git-presentation.md)
-   - [1.3. Git dans la pratique ?](./doc/markdown-git/git-presentation.md)
-   - [1.4. Différence entre Git et GitHub](./doc/markdown-git/git-presentation.md)
+   - [1.1. Qu'est-ce que Git ?](./doc/markdown-git/1-presentation.md)
+   - [1.2. Pourquoi utiliser Git ?](./doc/markdown-git/1-presentation.md)
+   - [1.3. Git dans la pratique ?](./doc/markdown-git/1-presentation.md)
+   - [1.4. Différence entre Git et GitHub](./doc/markdown-git/1-presentation.md)
 
 ## 2. Installation et configuration de Git
-   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/installation-config.md)
-   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/installation-config.md)
-   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/installation-config.md)
+   - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/2-config.md)
+   - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/2-config.md)
+   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-config.md)
 
 ## 3. Les bases de Git
-   - [3.1. Initialiser un dépôt Git (`git init`)](#/README.md)
-   - [3.2. Cloner un dépôt (`git clone`)](#/README.md)
-   - [3.3. Suivi des fichiers (`git add`)](#/README.md)
-   - [3.4. Committer des changements (`git commit`)](#/README.md)
-   - [3.5. Vérifier l'état du dépôt (`git status`)](#/README.md)
-   - [3.6. Voir l'historique des commits (`git log`)](#/README.md)
-   - [3.7. Annuler des modifications (`git checkout`, `git reset`)](#/README.md)
+   - [3.1. Initialiser un dépôt Git (`git init`)](./doc/markdown-git/3-base.md)
+   - [3.2. Cloner un dépôt (`git clone`)](./doc/markdown-git/3-base.md)
+   - [3.3. Suivi des fichiers (`git add`)](./doc/markdown-git/3-base.md)
+   - [3.4. Committer des changements (`git commit`)](./doc/markdown-git/3-base.md)
+   - [3.5. Vérifier l'état du dépôt (`git status`)](./doc/markdown-git/3-base.md)
+   - [3.6. Voir l'historique des commits (`git log`)](./doc/markdown-git/3-base.md)
+   - [3.7. Annuler des modifications (`git checkout`, `git reset`)](./doc/markdown-git/3-base.md)
 
 ## 4. Travail collaboratif avec Git
-   - [4.1. Introduction aux branches](./doc/markdown-git/git-collaboratif.md)
-   - [4.2. Créer et basculer entre les branches (`git branch`, `git checkout`, `git switch`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.3. Fusionner des branches (`git merge`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.4. Gérer les conflits de merge](./doc/markdown-git/git-collaboratif.md)
-   - [4.5. Envoyer des modifications vers un dépôt distant (`git push`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.6. Récupérer les modifications d'un dépôt distant (`git pull`)](./doc/markdown-git/git-collaboratif.md)
-   - [4.7. Travailler avec des forks et des pull requests](./doc/markdown-git/git-collaboratif.md)
+   - [4.1. Introduction aux branches](./doc/markdown-git/4-collaboratif.md)
+   - [4.2. Créer et basculer entre les branches (`git branch`, `git checkout`, `git switch`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.3. Fusionner des branches (`git merge`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.4. Gérer les conflits de merge](./doc/markdown-git/4-collaboratif.md)
+   - [4.5. Envoyer des modifications vers un dépôt distant (`git push`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.6. Récupérer les modifications d'un dépôt distant (`git pull`)](./doc/markdown-git/4-collaboratif.md)
+   - [4.7. Travailler avec des forks et des pull requests](./doc/markdown-git/4-collaboratif.md)
 
 ## 5. Fonctionnalités avancées de Git
-   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/fonctions-avancees.md)
-   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/fonctions-avancees.md)
-   - [5.4. Tags (`git tag`)](./doc/markdown-git/fonctions-avancees.md)
+   - [5.1. Git Stash : Sauvegarder des modifications temporaires (`git stash`)](./doc/markdown-git/5-fonctions-avancees.md)
+   - [5.2. Rebase (`git rebase`)](./doc/markdown-git/5-fonctions-avancees.md)
+   - [5.3. Tags (`git tag`)](./doc/markdown-git/5-fonctions-avancees.md)
 
 ## 6. Gestion des dépôts distants
-   - [6.1. Ajouter un dépôt distant (`git remote add`)](#/README.md)
-   - [6.2. Gérer plusieurs dépôts distants](#/README.md)
-   - [6.3. Supprimer un dépôt distant (`git remote remove`)](#/README.md)
+   - [6.1. Ajouter un dépôt distant (`git remote add`)](./doc/markdown-git/6-remote.md)
+   - [6.2. Gérer plusieurs dépôts distants](./doc/markdown-git/6-remote.md)
+   - [6.3. Supprimer un dépôt distant (`git remote remove`)](./doc/markdown-git/6-remote.md)
 
 ## 7. Bonnes pratiques Git
-   - [7.1. Rédiger des messages de commit clairs](#/README.md)
-   - [7.2. Organisation et stratégie de branches (GitFlow, GitHub Flow, etc.)](#/README.md)
-   - [7.3. Git et intégration continue (CI)](#/README.md)
-   - [7.4. Gestion des conflits](#/README.md)
-   - [7.5. Ne jamais committer des fichiers sensibles (utiliser `.gitignore`)](#/README.md)
+   - [7.1. Rédiger des messages de commit clairs](./doc/markdown-git/7-good-practice.md)
+   - [7.3. Git et intégration continue (CI)](./doc/markdown-git/7-good-practice.md)
+   - [7.4. Gestion des conflits](./doc/markdown-git/7-good-practice.md)
+   - [7.5. Ne jamais committer des fichiers sensibles (utiliser `.gitignore`)](./doc/markdown-git/7-good-practice.md)
 
 ## 8. Dépannage et récupération
-   - [9.1. Annuler un commit (`git reset`, `git revert`)](#/README.md)
-   - [9.2. Récupérer des fichiers supprimés](#/README.md)
-   - [9.3. Gérer les conflits complexes](#/README.md)
-   - [9.4. Sauvegarde et restauration de projets Git](#/README.md)
+   - [8.1. Annuler un commit (`git reset`, `git revert`)](./doc/markdown-git/8-depannage-recuperation.md)
+   - [8.2. Récupérer des fichiers supprimés](./doc/markdown-git/8-depannage-recuperation.md)
+   - [8.3. Gérer les conflits complexes](./doc/markdown-git/8-depannage-recuperation.md)
+   - [8.4. Sauvegarde et restauration de projets Git](./doc/markdown-git/8-depannage-recuperation.md)
 
 ## 9. Ressources et outils supplémentaires
-   - [10.1. Alias Git : Simplifier l'utilisation des commandes Git](#/README.md)
-   - [10.2. Utiliser Git avec un IDE (VSCode, IntelliJ, etc.)](#/README.md)
-   - [10.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](#/README.md)
-   - [10.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](#/README.md)
-   - [10.5. Ressources et documentation officielle Git](#/README.md)
-   - [10.6. Cours et tutoriels en ligne sur Git](#/README.md)
+   - [9.1. Alias Git : Simplifier l'utilisation des commandes Git](#/README.md)
+   - [9.2. Utiliser Git avec un IDE (VSCode, IntelliJ, etc.)](#/README.md)
+   - [9.3. Outils de visualisation de Git (`gitk`, `git log --graph`)](#/README.md)
+   - [9.4. Outils d'intégration continue et Git (Jenkins, Travis CI, CircleCI)](#/README.md)
+   - [9.5. Ressources et documentation officielle Git](#/README.md)
+   - [9.6. Cours et tutoriels en ligne sur Git](#/README.md)
 
 ## Project Description
 
