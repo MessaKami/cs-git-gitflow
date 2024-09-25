@@ -104,6 +104,10 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
      git branch -d hotfix/<description_bug>
      ```
 
+    ### Voici un schéma permet de visualiser la structure GitFLow.
+    ![Schema GitFLow](../../asset/scheme-git-flow.svg)
+
+    ---
 
 ## 6. Utilisation des commandes Git Flow
 
