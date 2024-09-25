@@ -33,3 +33,11 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
   git flow init
   ```
   Lors de l'initialisation, Git Flow vous demandera de confirmer les noms des branches (`main`, `develop`, etc.) et vous proposera des valeurs par défaut que vous pouvez accepter ou personnaliser.
+
+## 4. Les branches principales dans Git Flow
+
+1. **`main` (ou `master`)** :  
+   Cette branche contient le code en production, qui doit toujours être stable. Les nouvelles versions sont fusionnées dans `main` via des branches de release ou de hotfix.
+
+2. **`develop`** :  
+   Cette branche est utilisée pour intégrer toutes les nouvelles fonctionnalités. C'est l'environnement où le code est testé avant d'être prêt pour la production.
