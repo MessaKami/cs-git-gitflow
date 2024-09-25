@@ -75,6 +75,11 @@ Ce dépôt est une structure permettant de démarrer un projet professionnel ou 
 
 ## Author
 
+#### Ayoub Laroussi
+- **Role**: Tech lead
+- **GitHub**: [Ayoub Laroussi](https://github.com/EyeOne2-0)
+
+---
 ## License
 
 Distributed under the MIT License. `LICENSE` See for more information.
