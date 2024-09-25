@@ -11,7 +11,7 @@ Brève description
 ## 2. Installation et configuration de Git
    - [2.1. Installer Git (Windows, macOS, Linux)](./doc/markdown-git/2-installation-config.md)
    - [2.2. Configuration initiale de Git (`git config`)](./doc/markdown-git/2-installation-config.md)
-   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-config.md)
+   - [2.3. Générer et ajouter une clé SSH](./doc/markdown-git/2-installation-config.md)
 
 ## 3. Les bases de Git
    - [3.1. Initialiser un dépôt Git (`git init`)](./doc/markdown-git/3-base.md)
