@@ -104,3 +104,9 @@ git reset --hard HEAD~1
 Cela réinitialise le dépôt à l'état du commit précédent, en supprimant toutes les modifications locales.
 
 ---
+
+## Conclusion
+
+Ce README vous offre un aperçu des principales commandes Git que vous utiliserez fréquemment. En maîtrisant ces commandes, vous serez en mesure de gérer efficacement les versions de votre code, collaborer avec d'autres développeurs, et mieux contrôler l'évolution de votre projet.
+
+N'hésitez pas à consulter la documentation officielle de Git pour des détails supplémentaires et des options avancées : [Git Documentation](https://git-scm.com/doc).
