@@ -24,3 +24,12 @@ Git Flow peut être installé via **Git for Windows** ou **Scoop** :
   ```bash
   scoop install git-flow
   ```
+
+## 3. Initialisation de Git Flow
+Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt Git existant. Cette étape configure les branches principales (`main` et `develop`) et définit les conventions de nommage pour les autres types de branches.
+
+- **Initialiser Git Flow** :
+  ```bash
+  git flow init
+  ```
+  Lors de l'initialisation, Git Flow vous demandera de confirmer les noms des branches (`main`, `develop`, etc.) et vous proposera des valeurs par défaut que vous pouvez accepter ou personnaliser.
