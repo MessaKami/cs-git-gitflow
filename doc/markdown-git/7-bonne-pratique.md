@@ -225,3 +225,45 @@ $ git mergetool
 ---
 
 **Note** : Ce cheat sheet est un guide rapide. Pour des situations complexes, consultez la [documentation officielle de Git](https://git-scm.com/docs).
+
+## 7.4. Ne jamais committer des fichiers sensibles (utiliser .gitignore)
+
+Il est primordial de **ne jamais committer des fichiers sensibles** dans un dépôt Git. Les fichiers sensibles peuvent contenir des informations confidentielles comme :
+
+- Des mots de passe
+- Des clés API
+- Des certificats SSL
+- Des configurations spécifiques à l'environnement de développement ou de production
+
+Une fois qu'un fichier sensible est committé dans l'historique Git, il est difficile de le supprimer de façon sécurisée. Ces informations pourraient être exposées, même si elles sont supprimées par la suite.
+
+### Utilisation de `.gitignore`
+
+Pour éviter d'inclure ces fichiers sensibles dans votre dépôt Git, il est recommandé d'utiliser un fichier `.gitignore`. Ce fichier permet de spécifier les fichiers ou répertoires que Git doit ignorer lors du commit.
+
+#### Exemple d'utilisation de `.gitignore`
+
+Voici un exemple de contenu d'un fichier `.gitignore` :
+
+```bash
+# Ignorer les fichiers de configuration sensibles
+.env
+config/*.json
+
+# Ignorer les clés privées
+*.key
+*.pem
+
+# Ignorer les répertoires contenant des données temporaires
+/tmp/
+```
+
+Ce fichier `.gitignore` empêchera Git de suivre les fichiers listés, évitant ainsi leur inclusion dans l'historique des commits.
+
+#### Bonnes pratiques
+
+- **Ne pas inclure d'informations sensibles dans le code** : si possible, utilisez des variables d'environnement pour stocker les informations sensibles.
+- **Vérifier avant de committer** : assurez-vous que les fichiers contenant des informations sensibles sont correctement exclus via `.gitignore`.
+- **Utiliser des outils spécialisés** : il existe des outils comme [Git-crypt](https://github.com/AGWA/git-crypt) ou [BlackBox](https://github.com/StackExchange/blackbox) pour chiffrer des fichiers sensibles tout en les stockant dans Git.
+
+En suivant ces pratiques, vous limiterez les risques d'exposer des données confidentielles et contribuerez à la sécurité de votre projet.
