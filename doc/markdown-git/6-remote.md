@@ -98,3 +98,9 @@ pour confirmer qu'il n'apparaît plus dans la liste.
 ## Conclusion
 
 La gestion des dépôts distants est essentielle pour la collaboration et le partage de code. En utilisant les commandes ci-dessus, vous pouvez facilement ajouter, gérer et supprimer des dépôts distants dans votre projet Git. Une bonne pratique consiste à bien nommer vos dépôts distants et à tenir à jour leurs URL pour éviter toute confusion lors de la collaboration avec d'autres développeurs.
+
+## Ressources Complémentaires
+
+- [Documentation Git officielle](https://git-scm.com/doc)
+- [GitHub Guides](https://guides.github.com/)
+- [GitLab Documentation](https://docs.gitlab.com/)
