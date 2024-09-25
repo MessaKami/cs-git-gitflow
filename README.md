@@ -1,4 +1,4 @@
-# Project name
+# CHEAT SHEET GIT/GITFLOW
 
 Brève description
 
