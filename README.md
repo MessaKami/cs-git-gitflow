@@ -63,7 +63,7 @@ Brève description
 
 ## 10. Git Flow : Workflow avancé de gestion des branches
    - [10.1. Introduction à Git Flow](./doc/markdown-git-flow/git-flow.md)
-   - [10.2. Installation de Git Flow](./doc/markdown-git/9-ressources.md)
+   - [10.2. Installation de Git Flow](./doc/markdown-git-flow/git-flow.md)
    - [10.3. Initialisation de Git Flow](./doc/markdown-git/9-ressources.md)
    - [10.4. Les branches principales dans Git Flow](./doc/markdown-git/9-ressources.md)
    - [10.5. Les branches de support](./doc/markdown-git/9-ressources.md)
