@@ -103,3 +103,38 @@ Une fois que Git Flow est installé, vous devez l'initialiser dans votre dépôt
      git merge hotfix/<description_bug>
      git branch -d hotfix/<description_bug>
      ```
+
+
+## 6. Utilisation des commandes Git Flow
+
+Git Flow propose des commandes qui simplifient la gestion des branches. Voici les principales commandes disponibles après l'initialisation de Git Flow :
+
+- **Créer une nouvelle feature** :
+  ```bash
+  git flow feature start <nom_fonctionnalité>
+  ```
+
+- **Terminer une feature** (fusionner dans `develop`) :
+  ```bash
+  git flow feature finish <nom_fonctionnalité>
+  ```
+
+- **Démarrer une release** :
+  ```bash
+  git flow release start <version>
+  ```
+
+- **Terminer une release** (fusionner dans `main` et `develop`) :
+  ```bash
+  git flow release finish <version>
+  ```
+
+- **Démarrer un hotfix** :
+  ```bash
+  git flow hotfix start <nom_hotfix>
+  ```
+
+- **Terminer un hotfix** (fusionner dans `main` et `develop`) :
+  ```bash
+  git flow hotfix finish <nom_hotfix>
+  ```
